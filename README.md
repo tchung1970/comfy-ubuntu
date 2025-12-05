@@ -18,7 +18,7 @@ ComfyUI is a powerful, node-based interface for running AI image generation mode
 Clone this repository:
 
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/comfy-ubuntu
+git clone https://github.com/tchung1970/comfy-ubuntu
 cd comfy-ubuntu
 ```
 
