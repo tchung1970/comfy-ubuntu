@@ -22,11 +22,11 @@ bash install_comfy.sh
 ```
 
 This installer handles:
-- System package installation (python3, pip, venv, git)
+- System package installation (python3, pip, venv, git, wget)
 - ComfyUI cloning from https://github.com/comfyanonymous/ComfyUI.git
 - Python virtual environment creation
 - Dependencies installation from ComfyUI's requirements.txt
-- Model directory creation
+- Z-Image-Turbo model files download
 
 ### Running ComfyUI (after installation)
 ```bash
@@ -52,10 +52,10 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ```
 
 ### Model Setup
-The installer creates directories for Z-Image-Turbo models but does not download them. Models must be manually downloaded from HuggingFace URLs listed in README.md and placed in:
-- `~/comfy/models/text_encoders/`
-- `~/comfy/models/vae/`
-- `~/comfy/models/diffusion_models/`
+The installer automatically downloads Z-Image-Turbo model files from HuggingFace and places them in:
+- `~/comfy/models/text_encoders/qwen_3_4b.safetensors`
+- `~/comfy/models/vae/ae.safetensors`
+- `~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors`
 
 ### Target Environment
 - Ubuntu 22.04 LTS

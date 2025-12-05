@@ -1,6 +1,6 @@
 # Comfy Ubuntu Installer
 
-This repository provides a clean and simple way to install **ComfyUI** on **Ubuntu 22.04 LTS**. It includes a ready-to-run Bash installer script and instructions for optional Z-Image-Turbo model setup.
+This repository provides a clean and simple way to install **ComfyUI** on **Ubuntu 22.04 LTS**. It includes a ready-to-run Bash installer script that automatically downloads and configures the Z-Image-Turbo model.
 
 ## Overview
 
@@ -10,7 +10,7 @@ ComfyUI is a powerful, node-based interface for running AI image generation mode
 - ComfyUI cloning
 - Python virtual environment creation
 - Dependency installation
-- Folder preparation for Z-Image-Turbo
+- Z-Image-Turbo model download
 - Clear run instructions
 
 ## Installation
@@ -30,11 +30,11 @@ bash install_comfy.sh
 
 The installer will automatically:
 
-- Install Python, pip, venv, and Git
+- Install Python, pip, venv, Git, and wget
 - Clone ComfyUI into `~/comfy`
 - Create a Python venv named `ui`
 - Install required Python packages
-- Create necessary model directories
+- Download Z-Image-Turbo model files
 
 ## Running ComfyUI
 
@@ -50,23 +50,20 @@ Open your browser:
 http://127.0.0.1:8188
 ```
 
-## Optional: Z-Image-Turbo Model Setup
+## Z-Image-Turbo Models
 
-Download and place files into:
+The installer automatically downloads the following Z-Image-Turbo model files:
 
 ### Text Encoder
-`models/text_encoders/qwen_3_4b.safetensors`  
-https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors
+`~/comfy/models/text_encoders/qwen_3_4b.safetensors`
 
 ### VAE
-`models/vae/ae.safetensors`  
-https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors
+`~/comfy/models/vae/ae.safetensors`
 
 ### Diffusion Model
-`models/diffusion_models/z_image_turbo_bf16.safetensors`  
-https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors
+`~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors`
 
-If you get a 429 error, wait 2–5 minutes and retry.
+These files are downloaded from the [Comfy-Org/z_image_turbo](https://huggingface.co/Comfy-Org/z_image_turbo) repository on HuggingFace.
 
 ## Recommended Hardware
 

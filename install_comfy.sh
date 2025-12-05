@@ -5,7 +5,7 @@ set -e  # exit on error
 
 # 1. Install system requirements
 sudo apt update
-sudo apt install -y python3 python3-pip python3-venv git
+sudo apt install -y python3 python3-pip python3-venv git wget
 
 # 2. Clone ComfyUI into ~/comfy
 cd ~
@@ -36,7 +36,22 @@ pip install -r requirements.txt
 # 8. Create Z-Image-Turbo model directories
 mkdir -p ~/comfy/models/text_encoders
 mkdir -p ~/comfy/models/vae
-mkdir- p ~/comfy/models/diffusion_models
+mkdir -p ~/comfy/models/diffusion_models
+
+# 9. Download Z-Image-Turbo model files
+echo "=== Downloading Z-Image-Turbo model files (this may take a while) ==="
+
+echo "Downloading text encoder (qwen_3_4b.safetensors)..."
+wget -q --show-progress -O ~/comfy/models/text_encoders/qwen_3_4b.safetensors \
+  https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors
+
+echo "Downloading VAE (ae.safetensors)..."
+wget -q --show-progress -O ~/comfy/models/vae/ae.safetensors \
+  https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors
+
+echo "Downloading diffusion model (z_image_turbo_bf16.safetensors)..."
+wget -q --show-progress -O ~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors \
+  https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors
 
 echo "=== Installation complete. To run ComfyUI: ==="
 echo "cd ~/comfy"
