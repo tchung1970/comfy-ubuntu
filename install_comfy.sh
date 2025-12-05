@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# install_comfy.sh — install ComfyUI on Ubuntu 22.04
+# install_comfy.sh — install ComfyUI on Ubuntu 22.04 LTS
 
 set -e  # exit on error
 

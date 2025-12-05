@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a ComfyUI installer repository for Ubuntu 22.04. It provides an automated installation script that sets up ComfyUI, a node-based interface for AI image generation models, on Ubuntu systems.
+This is a ComfyUI installer repository for Ubuntu 22.04 LTS. It provides an automated installation script that sets up ComfyUI, a node-based interface for AI image generation models, on Ubuntu systems.
 
 ## Architecture
 

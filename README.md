@@ -1,6 +1,6 @@
 # Comfy Ubuntu Installer
 
-This repository provides a clean and simple way to install **ComfyUI** on **Ubuntu 22.04**. It includes a ready-to-run Bash installer script and instructions for optional Z-Image-Turbo model setup.
+This repository provides a clean and simple way to install **ComfyUI** on **Ubuntu 22.04 LTS**. It includes a ready-to-run Bash installer script and instructions for optional Z-Image-Turbo model setup.
 
 ## Overview
 
