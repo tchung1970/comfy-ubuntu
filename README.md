@@ -75,6 +75,11 @@ These files are downloaded from the [Comfy-Org/z_image_turbo](https://huggingfac
   - RTX 4090 (24GB)
   - RTX 5090 (24GB+)
 - 32GB system RAM recommended
+- Disk Space Requirements:
+  - ComfyUI installation: ~5 GB
+  - Z-Image-Turbo model files: ~12 GB
+  - Generated images / workflows: 10–50 GB (depending on usage)
+  - **Recommended minimum free space: 30–50 GB**
 
 ## License
 
