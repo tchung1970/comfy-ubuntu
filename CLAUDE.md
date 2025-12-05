@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a ComfyUI installer repository for Ubuntu 22.04 (compatible with Ubuntu 20.04). It provides an automated installation script that sets up ComfyUI, a node-based interface for AI image generation models, on Ubuntu systems.
+This is a ComfyUI installer repository for Ubuntu 22.04. It provides an automated installation script that sets up ComfyUI, a node-based interface for AI image generation models, on Ubuntu systems.
 
 ## Architecture
 
@@ -58,7 +58,7 @@ The installer creates directories for Z-Image-Turbo models but does not download
 - `~/comfy/models/diffusion_models/`
 
 ### Target Environment
-- Ubuntu 22.04 LTS (also compatible with 20.04)
+- Ubuntu 22.04 LTS
 - Python 3.10
 - PyTorch 2.3 + CUDA 12.1 (for GPU)
 - Recommended: NVIDIA GPU (RTX 4080/4090/5090) with 32GB system RAM

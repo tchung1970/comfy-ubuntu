@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# install_comfy.sh — install ComfyUI + Z-Image-Turbo on Ubuntu 22.04
+# install_comfy.sh — install ComfyUI on Ubuntu 22.04
 
 set -e  # exit on error
 
