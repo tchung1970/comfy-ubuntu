@@ -66,4 +66,7 @@ echo "cd ~/comfy"
 echo "source ui/bin/activate"
 echo "python main.py"
 echo "Then open your browser at http://127.0.0.1:8188"
+echo ""
+echo "To access the UI externally, open port 8188 and run:"
+echo "python main.py --listen 0.0.0.0 --port 8188"
 
