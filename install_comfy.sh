@@ -54,6 +54,13 @@ echo "Downloading diffusion model (z_image_turbo_bf16.safetensors)..."
 wget -q --show-progress -O ~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors \
   https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors
 
+# 10. Create LoRA directory and download LoRA file
+mkdir -p ~/comfy/models/loras
+
+echo "Downloading LoRA (pixel_art_style_z_image_turbo.safetensors)..."
+wget -q --show-progress -O ~/comfy/models/loras/pixel_art_style_z_image_turbo.safetensors \
+  https://huggingface.co/tarn59/pixel_art_style_lora_z_image_turbo/resolve/main/pixel_art_style_z_image_turbo.safetensors
+
 echo "=== Installation complete. To run ComfyUI: ==="
 echo "cd ~/comfy"
 echo "source ui/bin/activate"
