@@ -58,6 +58,8 @@ To access the UI externally, open port 8188 and run:
 python main.py --listen 0.0.0.0 --port 8188
 ```
 
+Open in browser: `http://<YOUR-PUBLIC-IP>:8188`
+
 ## Z-Image-Turbo Models
 
 The installer automatically downloads the following Z-Image-Turbo model files:
