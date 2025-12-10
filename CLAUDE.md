@@ -56,6 +56,7 @@ The installer automatically downloads Z-Image-Turbo model files from HuggingFace
 - `~/comfy/models/text_encoders/qwen_3_4b.safetensors`
 - `~/comfy/models/vae/ae.safetensors`
 - `~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors`
+- `~/comfy/models/loras/pixel_art_style_z_image_turbo.safetensors`
 
 ### Target Environment
 - Ubuntu 22.04 LTS

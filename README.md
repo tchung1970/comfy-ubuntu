@@ -50,6 +50,14 @@ Open your browser:
 http://127.0.0.1:8188
 ```
 
+### External Access
+
+To access the UI externally, open port 8188 and run:
+
+```bash
+python main.py --listen 0.0.0.0 --port 8188
+```
+
 ## Z-Image-Turbo Models
 
 The installer automatically downloads the following Z-Image-Turbo model files:
@@ -63,7 +71,12 @@ The installer automatically downloads the following Z-Image-Turbo model files:
 ### Diffusion Model
 `~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors`
 
-These files are downloaded from the [Comfy-Org/z_image_turbo](https://huggingface.co/Comfy-Org/z_image_turbo) repository on HuggingFace.
+### LoRA
+`~/comfy/models/loras/pixel_art_style_z_image_turbo.safetensors`
+
+These files are downloaded from HuggingFace:
+- Z-Image-Turbo models: [Comfy-Org/z_image_turbo](https://huggingface.co/Comfy-Org/z_image_turbo)
+- Pixel Art LoRA: [tarn59/pixel_art_style_lora_z_image_turbo](https://huggingface.co/tarn59/pixel_art_style_lora_z_image_turbo)
 
 ## Recommended Hardware
 
