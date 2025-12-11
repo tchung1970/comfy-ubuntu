@@ -22,20 +22,10 @@ git clone https://github.com/tchung1970/comfy-ubuntu
 cd comfy-ubuntu
 ```
 
-### Standard Installation (Ubuntu)
-
 Run the installer:
 
 ```bash
 bash install_comfy.sh
-```
-
-### RunPod GPU Instance
-
-If you're running on a RunPod GPU instance, use the RunPod-specific installer which installs to `/workspace`:
-
-```bash
-bash comfy_runpod.sh
 ```
 
 The installer will automatically:
