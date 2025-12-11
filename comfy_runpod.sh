@@ -7,8 +7,8 @@ set -e  # exit on error
 WS=/workspace
 
 # 1. Install system requirements
-sudo apt update
-sudo apt install -y git wget python3 python3-venv python3-dev
+apt update
+apt install -y git wget python3 python3-venv python3-dev
 
 # 2. Clone ComfyUI into $WS/comfy
 cd $WS
