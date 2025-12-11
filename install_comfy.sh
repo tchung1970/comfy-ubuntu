@@ -60,13 +60,17 @@ echo "Downloading LoRA (pixel_art_style_z_image_turbo.safetensors)..."
 wget -q --show-progress -O ~/comfy/models/loras/pixel_art_style_z_image_turbo.safetensors \
   https://huggingface.co/tarn59/pixel_art_style_lora_z_image_turbo/resolve/main/pixel_art_style_z_image_turbo.safetensors
 
-echo "=== Installation complete. To run ComfyUI: ==="
+echo "=== Installation complete ==="
+echo ""
+echo "=== Running Locally ==="
 echo "cd ~/comfy"
 echo "source ui/bin/activate"
 echo "python main.py"
-echo "Then open your browser at http://127.0.0.1:8188"
+echo "Open your browser: http://127.0.0.1:8188"
 echo ""
-echo "To access the UI externally, open port 8188 and run:"
+echo "=== Running Remotely ==="
+echo "cd ~/comfy"
+echo "source ui/bin/activate"
 echo "python main.py --listen 0.0.0.0 --port 8188"
-echo "Open in browser: http://<YOUR-PUBLIC-IP>:8188"
+echo "Open in browser: http://<YOUR-SERVER-IP>:8188"
 
