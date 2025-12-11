@@ -23,6 +23,12 @@ git clone https://github.com/tchung1970/comfy-ubuntu
 cd comfy-ubuntu
 ```
 
+If sudo is not installed (e.g., on cloud instances), install it first:
+
+```bash
+apt -y update && apt -y install sudo
+```
+
 Run the installer:
 
 ```bash
