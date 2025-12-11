@@ -1,6 +1,6 @@
 # Comfy Ubuntu Installer with Z-Image-Turbo models
 
-This repository provides a clean and simple way to install **ComfyUI** on **Ubuntu 22.04 LTS**. It includes a ready-to-run Bash installer script that automatically downloads and configures the Z-Image-Turbo model.
+This repository provides a clean and simple way to install **ComfyUI** on **Ubuntu 22.04 LTS** or **Ubuntu 24.04 LTS**. It includes a ready-to-run Bash installer script that automatically downloads and configures the Z-Image-Turbo model.
 
 ## Overview
 
@@ -30,9 +30,9 @@ bash install_comfy.sh
 
 The installer will automatically:
 
-- Install Python, pip, venv, Git, and wget
+- Install Python 3.10 (via deadsnakes PPA if needed)
 - Clone ComfyUI into `~/comfy`
-- Create a Python venv named `ui`
+- Create a Python 3.10 venv named `ui`
 - Install required Python packages
 - Download Z-Image-Turbo model files
 
@@ -82,8 +82,8 @@ These files are downloaded from HuggingFace:
 
 ## Recommended Hardware
 
-- Ubuntu 22.04 LTS
-- Python 3.10
+- Ubuntu 22.04 LTS or Ubuntu 24.04 LTS
+- Python 3.10 (installed automatically)
 - PyTorch 2.3 + CUDA 12.1
 - NVIDIA GPU (recommended):
   - RTX 4080 (16GB)
