@@ -63,6 +63,6 @@ wget -q --show-progress -O $WS/comfy/models/loras/pixel_art_style_z_image_turbo.
   https://huggingface.co/tarn59/pixel_art_style_lora_z_image_turbo/resolve/main/pixel_art_style_z_image_turbo.safetensors
 
 echo "=== Installation complete. To run ComfyUI: ==="
-echo "cd \$WS/comfy"
+echo "cd $WS/comfy"
 echo "source ui/bin/activate"
 echo "python main.py --listen 0.0.0.0 --port 8188"
