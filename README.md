@@ -29,6 +29,8 @@ If sudo is not installed (e.g., on cloud instances), install it first:
 apt -y update && apt -y install sudo
 ```
 
+For RunPod templates, set the container disk size to at least 40GB.
+
 Run the installer:
 
 ```bash
