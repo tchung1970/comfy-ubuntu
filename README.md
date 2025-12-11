@@ -30,9 +30,9 @@ bash install_comfy.sh
 
 The installer will automatically:
 
-- Install Python 3.10 (via deadsnakes PPA if needed)
+- Install Python 3 and venv packages
 - Clone ComfyUI into `~/comfy`
-- Create a Python 3.10 venv named `ui`
+- Create a Python venv named `ui`
 - Install required Python packages
 - Download Z-Image-Turbo model files
 
@@ -83,7 +83,7 @@ These files are downloaded from HuggingFace:
 ## Recommended Hardware
 
 - Ubuntu 22.04 LTS or Ubuntu 24.04 LTS
-- Python 3.10
+- Python 3 (uses system default: Python 3.10 on 22.04, Python 3.12 on 24.04)
 - PyTorch 2.1–2.4 + CUDA 12.1 (A10, A100, H100)
 - PyTorch 2.8+ + CUDA 12.8+ (RTX 5080, RTX 5090)
 - Recommended NVIDIA GPUs:

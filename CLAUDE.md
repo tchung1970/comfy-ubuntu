@@ -22,10 +22,9 @@ bash install_comfy.sh
 ```
 
 This installer handles:
-- Python 3.10 installation (via deadsnakes PPA if needed)
-- System package installation (git, wget)
+- System package installation (git, wget, python3, python3-venv, python3-dev)
 - ComfyUI cloning from https://github.com/comfyanonymous/ComfyUI.git
-- Python 3.10 virtual environment creation
+- Python virtual environment creation
 - Dependencies installation from ComfyUI's requirements.txt
 - Z-Image-Turbo model files download
 
@@ -44,10 +43,10 @@ Access at: http://127.0.0.1:8188
 ComfyUI is installed to `~/comfy`, NOT within this repository. This repository only contains the installer script.
 
 ### Virtual Environment
-The Python venv is named `ui` (not the typical `venv` or `.venv`) and is created inside the ComfyUI directory at `~/comfy/ui/`. The venv is explicitly created with Python 3.10 using `python3.10 -m venv ui`.
+The Python venv is named `ui` (not the typical `venv` or `.venv`) and is created inside the ComfyUI directory at `~/comfy/ui/` using `python3 -m venv ui`.
 
 ### GPU Support
-The installer has a commented-out section for GPU-enabled PyTorch installation (line 41-43 in install_comfy.sh). If GPU support is needed, uncomment:
+The installer has a commented-out section for GPU-enabled PyTorch installation (line 33-35 in install_comfy.sh). If GPU support is needed, uncomment:
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
@@ -61,6 +60,6 @@ The installer automatically downloads Z-Image-Turbo model files from HuggingFace
 
 ### Target Environment
 - Ubuntu 22.04 LTS or Ubuntu 24.04 LTS
-- Python 3.10 (installed automatically via deadsnakes PPA if not available)
+- Python 3 (uses system default)
 - PyTorch 2.3 + CUDA 12.1 (for GPU)
-- Recommended: NVIDIA GPU (RTX 4080/4090/5090) with 32GB system RAM
+- Recommended: NVIDIA GPU (RTX 5080/5090) with 32GB system RAM

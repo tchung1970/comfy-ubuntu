@@ -6,17 +6,9 @@ set -e  # exit on error
 
 # 1. Install system requirements
 sudo apt update
-sudo apt install -y software-properties-common git wget
+sudo apt install -y git wget python3 python3-venv python3-dev
 
-# 2. Install Python 3.10 (works on both Ubuntu 22.04 and 24.04)
-if ! command -v python3.10 &> /dev/null; then
-  echo "Python 3.10 not found, installing via deadsnakes PPA..."
-  sudo add-apt-repository -y ppa:deadsnakes/ppa
-  sudo apt update
-fi
-sudo apt install -y python3.10 python3.10-venv python3.10-dev
-
-# 3. Clone ComfyUI into ~/comfy
+# 2. Clone ComfyUI into ~/comfy
 cd ~
 if [ -d "comfy" ]; then
   echo "Directory ~/comfy already exists — skipping clone"
@@ -26,29 +18,29 @@ fi
 
 cd comfy
 
-# 4. Create virtual environment named "ui" with Python 3.10
-python3.10 -m venv ui
+# 3. Create virtual environment named "ui"
+python3 -m venv ui
 
-# 5. Activate venv
+# 4. Activate venv
 source ui/bin/activate
 
-# 6. Upgrade pip, wheel, setuptools
+# 5. Upgrade pip, wheel, setuptools
 pip install --upgrade pip wheel setuptools
 
-# 7. Install ComfyUI dependencies
+# 6. Install ComfyUI dependencies
 pip install -r requirements.txt
 
-# 8. (Optional) Install GPU-enabled PyTorch — only if you have NVIDIA + CUDA
+# 7. (Optional) Install GPU-enabled PyTorch — only if you have NVIDIA + CUDA
 # You can uncomment the following block if you want GPU support:
 # pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
-# 9. Create model directories
+# 8. Create model directories
 mkdir -p ~/comfy/models/text_encoders
 mkdir -p ~/comfy/models/vae
 mkdir -p ~/comfy/models/diffusion_models
 mkdir -p ~/comfy/models/loras
 
-# 10. Download Z-Image-Turbo model files
+# 9. Download Z-Image-Turbo model files
 echo "=== Downloading Z-Image-Turbo model files (this may take a while) ==="
 
 echo "Downloading text encoder (qwen_3_4b.safetensors)..."
@@ -63,7 +55,7 @@ echo "Downloading diffusion model (z_image_turbo_bf16.safetensors)..."
 wget -q --show-progress -O ~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors \
   https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors
 
-# 11. Download LoRA file
+# 10. Download LoRA file
 echo "Downloading LoRA (pixel_art_style_z_image_turbo.safetensors)..."
 wget -q --show-progress -O ~/comfy/models/loras/pixel_art_style_z_image_turbo.safetensors \
   https://huggingface.co/tarn59/pixel_art_style_lora_z_image_turbo/resolve/main/pixel_art_style_z_image_turbo.safetensors
