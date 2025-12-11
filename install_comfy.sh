@@ -34,10 +34,11 @@ pip install -r requirements.txt
 # You can uncomment the following block if you want GPU support:
 # pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
-# 8. Create Z-Image-Turbo model directories
+# 8. Create model directories
 mkdir -p ~/comfy/models/text_encoders
 mkdir -p ~/comfy/models/vae
 mkdir -p ~/comfy/models/diffusion_models
+mkdir -p ~/comfy/models/loras
 
 # 9. Download Z-Image-Turbo model files
 echo "=== Downloading Z-Image-Turbo model files (this may take a while) ==="
@@ -54,9 +55,7 @@ echo "Downloading diffusion model (z_image_turbo_bf16.safetensors)..."
 wget -q --show-progress -O ~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors \
   https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors
 
-# 10. Create LoRA directory and download LoRA file
-mkdir -p ~/comfy/models/loras
-
+# 10. Download LoRA file
 echo "Downloading LoRA (pixel_art_style_z_image_turbo.safetensors)..."
 wget -q --show-progress -O ~/comfy/models/loras/pixel_art_style_z_image_turbo.safetensors \
   https://huggingface.co/tarn59/pixel_art_style_lora_z_image_turbo/resolve/main/pixel_art_style_z_image_turbo.safetensors
