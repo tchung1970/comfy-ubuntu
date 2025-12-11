@@ -75,17 +75,14 @@ Open in browser: `http://<YOUR-SERVER-IP>:8188`
 
 The installer automatically downloads the following Z-Image-Turbo model files:
 
-### Text Encoder
-`~/comfy/models/text_encoders/qwen_3_4b.safetensors`
+| Model | Path | Size |
+|-------|------|------|
+| Text Encoder | `~/comfy/models/text_encoders/qwen_3_4b.safetensors` | 8.04 GB |
+| VAE | `~/comfy/models/vae/ae.safetensors` | 335 MB |
+| Diffusion Model | `~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors` | 12.3 GB |
+| LoRA | `~/comfy/models/loras/pixel_art_style_z_image_turbo.safetensors` | 170 MB |
 
-### VAE
-`~/comfy/models/vae/ae.safetensors`
-
-### Diffusion Model
-`~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors`
-
-### LoRA
-`~/comfy/models/loras/pixel_art_style_z_image_turbo.safetensors`
+**Total: ~20.8 GB**
 
 These files are downloaded from HuggingFace:
 - Z-Image-Turbo models: [Comfy-Org/z_image_turbo](https://huggingface.co/Comfy-Org/z_image_turbo)
