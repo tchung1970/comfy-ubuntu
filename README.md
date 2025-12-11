@@ -13,6 +13,16 @@ ComfyUI is a powerful, node-based interface for running AI image generation mode
 - Z-Image-Turbo model download
 - Clear run instructions
 
+## RunPod Setup
+
+> **Warning:** For RunPod templates, set the container disk size to at least 40GB.
+
+If sudo is not installed, install it first:
+
+```bash
+apt -y update && apt -y install sudo
+```
+
 ## Installation
 
 Clone this repository:
@@ -22,14 +32,6 @@ cd ~/
 git clone https://github.com/tchung1970/comfy-ubuntu
 cd comfy-ubuntu
 ```
-
-If sudo is not installed (e.g., on cloud instances), install it first:
-
-```bash
-apt -y update && apt -y install sudo
-```
-
-For RunPod templates, set the container disk size to at least 40GB.
 
 Run the installer:
 
