@@ -38,27 +38,27 @@ The installer will automatically:
 
 ## Running ComfyUI
 
+### Running Locally
+
 ```bash
 cd ~/comfy
 source ui/bin/activate
 python main.py
 ```
 
-Open your browser:
+Open your browser: `http://127.0.0.1:8188`
 
-```
-http://127.0.0.1:8188
-```
+### Running Remotely
 
-### External Access
-
-To access the UI externally, open port 8188 and run:
+To access the UI from another machine, open port 8188 and run:
 
 ```bash
+cd ~/comfy
+source ui/bin/activate
 python main.py --listen 0.0.0.0 --port 8188
 ```
 
-Open in browser: `http://<YOUR-PUBLIC-IP>:8188`
+Open in browser: `http://<YOUR-SERVER-IP>:8188`
 
 ## Z-Image-Turbo Models
 
