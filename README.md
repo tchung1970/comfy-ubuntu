@@ -83,18 +83,23 @@ These files are downloaded from HuggingFace:
 ## Recommended Hardware
 
 - Ubuntu 22.04 LTS or Ubuntu 24.04 LTS
-- Python 3.10 (installed automatically)
-- PyTorch 2.3 + CUDA 12.1
-- NVIDIA GPU (recommended):
-  - RTX 4080 (16GB)
-  - RTX 4090 (24GB)
-  - RTX 5090 (24GB+)
+- Python 3.10
+- PyTorch 2.1–2.4 + CUDA 12.1 (A10, A100, H100, H200, RTX 4080, RTX 4090)
+- PyTorch 2.8+ + CUDA 12.8+ (RTX 5090)
+- Recommended NVIDIA GPUs:
+  - A10
+  - A100
+  - H100
+  - H200
+  - RTX 4080
+  - RTX 4090
+  - RTX 5090
 - 32GB system RAM recommended
-- Disk Space Requirements:
-  - ComfyUI installation: ~5 GB
-  - Z-Image-Turbo model files: ~12 GB
-  - Generated images / workflows: 10–50 GB (depending on usage)
-  - **Recommended minimum free space: 30–50 GB**
+- Disk space requirements:
+  - ComfyUI: ~5 GB
+  - Z-Image-Turbo models: ~12 GB
+  - Generated images/workflows: 10–50 GB
+  - Recommended free space: 30–50 GB
 
 ## License
 
