@@ -98,6 +98,7 @@ These files are downloaded from HuggingFace:
 - PyTorch 2.8+ + CUDA 12.8+ (RTX 5080, RTX 5090)
 - Recommended NVIDIA GPUs:
   - A10
+  - A40
   - A100
   - H100
   - RTX 5080
