@@ -9,16 +9,21 @@ This is a ComfyUI installer repository for Ubuntu 22.04 and 24.04 LTS. It provid
 ## Architecture
 
 The repository consists of:
-- **install_comfy.sh**: Main installation script that automates the entire ComfyUI setup process
-- Installs ComfyUI into `~/comfy` directory (not in this repo)
-- Creates a Python virtual environment named `ui` within the ComfyUI installation
+- **install_comfy.sh**: Main installation script for standard Ubuntu systems (installs to `~/comfy`)
+- **comfy_runpod.sh**: RunPod-specific installer for GPU instances (installs to `/workspace/comfy`)
+- Both scripts create a Python virtual environment named `ui` within the ComfyUI installation
 - Sets up model directories for Z-Image-Turbo (text_encoders, vae, diffusion_models)
 
 ## Key Commands
 
-### Installation
+### Installation (Standard Ubuntu)
 ```bash
 bash install_comfy.sh
+```
+
+### Installation (RunPod GPU Instance)
+```bash
+bash comfy_runpod.sh
 ```
 
 This installer handles:
