@@ -94,7 +94,7 @@ These files are downloaded from HuggingFace:
 
 - Ubuntu 22.04 LTS or Ubuntu 24.04 LTS
 - Python 3 (uses system default: Python 3.10 on 22.04, Python 3.12 on 24.04)
-- PyTorch 2.1–2.4 + CUDA 12.1 (A10, A40, A100)
+- PyTorch 2.1–2.4 + CUDA 12.1–12.4 (A10, A40, A100)
 - PyTorch 2.8+ + CUDA 12.8+ (RTX 5080, RTX 5090)
 - Recommended NVIDIA GPUs:
   - A10
