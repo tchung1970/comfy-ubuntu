@@ -42,7 +42,7 @@ bash install_comfy.sh
 The installer will automatically:
 
 - Install Python 3 and venv packages
-- Clone ComfyUI into `~/comfy`
+- Clone ComfyUI into `~/ComfyUI`
 - Create a Python venv named `ui`
 - Install required Python packages
 - Download Z-Image-Turbo model files
@@ -52,7 +52,7 @@ The installer will automatically:
 ### Running Locally
 
 ```bash
-cd ~/comfy
+cd ~/ComfyUI
 source ui/bin/activate
 python main.py
 ```
@@ -64,7 +64,7 @@ Open your browser: `http://127.0.0.1:8188`
 To access the UI from another machine, open port 8188 and run:
 
 ```bash
-cd ~/comfy
+cd ~/ComfyUI
 source ui/bin/activate
 python main.py --listen 0.0.0.0 --port 8188
 ```
@@ -77,10 +77,10 @@ The installer automatically downloads the following Z-Image-Turbo model files:
 
 | Model | Path | Size |
 |-------|------|------|
-| Text Encoder | `~/comfy/models/text_encoders/qwen_3_4b.safetensors` | 8.04 GB |
-| VAE | `~/comfy/models/vae/ae.safetensors` | 335 MB |
-| Diffusion Model | `~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors` | 12.3 GB |
-| LoRA | `~/comfy/models/loras/pixel_art_style_z_image_turbo.safetensors` | 170 MB |
+| Text Encoder | `~/ComfyUI/models/text_encoders/qwen_3_4b.safetensors` | 8.04 GB |
+| VAE | `~/ComfyUI/models/vae/ae.safetensors` | 335 MB |
+| Diffusion Model | `~/ComfyUI/models/diffusion_models/z_image_turbo_bf16.safetensors` | 12.3 GB |
+| LoRA | `~/ComfyUI/models/loras/pixel_art_style_z_image_turbo.safetensors` | 170 MB |
 
 **Total: ~20.8 GB**
 

@@ -10,7 +10,7 @@ This is a ComfyUI installer repository for Ubuntu 22.04 and 24.04 LTS. It provid
 
 The repository consists of:
 - **install_comfy.sh**: Main installation script that automates the entire ComfyUI setup process
-- Installs ComfyUI into `~/comfy` directory (not in this repo)
+- Installs ComfyUI into `~/ComfyUI` directory (not in this repo)
 - Creates a Python virtual environment named `ui` within the ComfyUI installation
 - Sets up model directories for Z-Image-Turbo (text_encoders, vae, diffusion_models)
 
@@ -30,7 +30,7 @@ This installer handles:
 
 ### Running ComfyUI (after installation)
 ```bash
-cd ~/comfy
+cd ~/ComfyUI
 source ui/bin/activate
 python main.py
 ```
@@ -40,10 +40,10 @@ Access at: http://127.0.0.1:8188
 ## Important Details
 
 ### Installation Location
-ComfyUI is installed to `~/comfy`, NOT within this repository. This repository only contains the installer script.
+ComfyUI is installed to `~/ComfyUI`, NOT within this repository. This repository only contains the installer script.
 
 ### Virtual Environment
-The Python venv is named `ui` (not the typical `venv` or `.venv`) and is created inside the ComfyUI directory at `~/comfy/ui/` using `python3 -m venv ui`.
+The Python venv is named `ui` (not the typical `venv` or `.venv`) and is created inside the ComfyUI directory at `~/ComfyUI/ui/` using `python3 -m venv ui`.
 
 ### GPU Support
 The installer has a commented-out section for GPU-enabled PyTorch installation (line 33-35 in install_comfy.sh). If GPU support is needed, uncomment:
@@ -53,10 +53,10 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 ### Model Setup
 The installer automatically downloads Z-Image-Turbo model files from HuggingFace and places them in:
-- `~/comfy/models/text_encoders/qwen_3_4b.safetensors`
-- `~/comfy/models/vae/ae.safetensors`
-- `~/comfy/models/diffusion_models/z_image_turbo_bf16.safetensors`
-- `~/comfy/models/loras/pixel_art_style_z_image_turbo.safetensors`
+- `~/ComfyUI/models/text_encoders/qwen_3_4b.safetensors`
+- `~/ComfyUI/models/vae/ae.safetensors`
+- `~/ComfyUI/models/diffusion_models/z_image_turbo_bf16.safetensors`
+- `~/ComfyUI/models/loras/pixel_art_style_z_image_turbo.safetensors`
 
 ### Target Environment
 - Ubuntu 22.04 LTS or Ubuntu 24.04 LTS
